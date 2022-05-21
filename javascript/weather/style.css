@@ -11,8 +11,13 @@
     margin-top: 100px;
     text-align: center;
     width: 80%;
-    background-color: pink;
     margin: 0 auto;
+}
+@media screen and (max-width: 580px){
+    .content{
+        margin-top: 0;
+        width: 95%;
+    }
 }
 
 
@@ -23,8 +28,12 @@
     padding: 10px 0 50px 0;
     font-size: 40px;
 }
-
-
+@media screen and (max-width: 580px){
+    .main-logo{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+}
 
 
 
@@ -40,6 +49,13 @@
     margin-right: 20px;
     border-radius:20px;
 }
+@media screen and (max-width: 580px){
+    .search-bar{
+        font-size: 15px;
+        padding: 6px;
+        border-radius: 10px;
+    }
+}
 
 .search-btn{
     padding: 15px;
@@ -49,6 +65,15 @@
 
     margin-left: 20px;
 }
+@media screen and (max-width: 580px){
+    .search-btn{
+        font-size: 15px;
+        padding: 6px;
+        border-radius: 10px;
+        margin-left: 5px;
+    }
+}
+
 
 /*  Weather css  */
 .weather{
@@ -57,9 +82,17 @@
     justify-content: center;
 }
 
+
+
 .weather-icon{
     width: 250px;
     padding-right: 50px;
+}
+@media screen and (max-width: 580px){
+    .weather-icon{
+        width: 125px; 
+        padding-right: 15px;
+    }
 }
 
 .weather-data{
@@ -68,7 +101,12 @@
     justify-content: center;
     flex-direction: column;
 }
-
+@media screen and (max-width: 580px){
+    .weather-data{
+        padding-left: 15px;
+        font-size: 10px;
+    }
+}
 
 
 
@@ -80,8 +118,14 @@
 .clothes h1{
     margin-bottom: 0;
 }
+@media screen and (max-width: 580px){
+    .clothes h1{
+        font-size: 20px;
+    }
+}
 
 .clothes .point{
     padding: 0;
     margin: 0;
 }
+

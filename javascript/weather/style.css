@@ -1,0 +1,87 @@
+/*  Main css  */
+*{
+    background-color: #75CFF0;
+}
+
+
+
+
+/*  Content css  */
+.content{
+    margin-top: 100px;
+    text-align: center;
+    width: 80%;
+    background-color: pink;
+    margin: 0 auto;
+}
+
+
+
+
+/*  Main-log css  */
+.main-logo{
+    padding: 10px 0 50px 0;
+    font-size: 40px;
+}
+
+
+
+
+
+/*  Search css  */
+.search{
+    padding: 0 0 30px;
+}
+
+.search-bar{
+    padding: 15px;
+    font-size: 35px;
+    background-color: gainsboro;
+    margin-right: 20px;
+    border-radius:20px;
+}
+
+.search-btn{
+    padding: 15px;
+    font-size: 35px;
+    background-color: #fff;
+    border-radius:20px;
+
+    margin-left: 20px;
+}
+
+/*  Weather css  */
+.weather{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.weather-icon{
+    width: 250px;
+    padding-right: 50px;
+}
+
+.weather-data{
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+/* Clothes css  */
+.clothes{
+    padding: 15px 0;
+}
+
+.clothes h1{
+    margin-bottom: 0;
+}
+
+.clothes .point{
+    padding: 0;
+    margin: 0;
+}

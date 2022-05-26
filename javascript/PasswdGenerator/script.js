@@ -1,11 +1,18 @@
-let nav = document.querySelector("#navArea");
-let btn = document.querySelector(".toggle-btn");
-let mask = document.querySelector("#mask");
+function getPassword (){
+    var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!$%&*()-_";
 
-btn.onclick = () => {
-    nav.classList.toggle("open");
-}
+    var passwdLength = document.querySelector(".pw-length").value;
 
-mask.onclick = () => {
-    nav.classList.toggle("open");
-}
+    alert(passwdLength);
+
+};
+
+/* 
+
+document.querySelector(".change-pw").addEventListener("click", function() {
+    var passwdLength = document.querySelector(".pw-length").value;
+
+    alert(passwdLength);
+});
+
+ */

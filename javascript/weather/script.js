@@ -24,17 +24,17 @@ let weather = {
 
         // Clothes info
         if(temp > 20) {
-            document.querySelector(".top-clothes-type").innerHTML = "Short-Tshit";
+            document.querySelector(".top-clothes-type").innerHTML = "Short-Tshirt";
             document.querySelector(".bottom-clothes-type").innerHTML = "Short-Pants";
         };
 
         if(temp < 21) {
-            document.querySelector(".top-clothes-type").innerHTML = "Long-Shit";
+            document.querySelector(".top-clothes-type").innerHTML = "Long-Shirt";
             document.querySelector(".bottom-clothes-type").innerHTML = "Long-Pants";
         };
 
         if(temp < 17) {
-            document.querySelector(".top-clothes-type").innerHTML = "Long-Shit+Jacket";
+            document.querySelector(".top-clothes-type").innerHTML = "Long-Shirt+Jacket";
             document.querySelector(".bottom-clothes-type").innerHTML = "Long-Pants";
         };
 

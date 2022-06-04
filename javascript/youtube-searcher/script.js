@@ -7,9 +7,7 @@ function search(){
     console.log(search_bar);
 
     if (search_bar.length == 0) {
-        var input = document.querySelector('.search-bar');
-        input.placeholder='PLEASE ENTER TEXT';
-        // Change placeholder color
+        document.querySelector(".error-msg").innerHTML = "Please enter text";
     } else {
         // Change space to special character
         let search_info = search_bar.replace(/\s+/g, "+");
@@ -18,7 +16,11 @@ function search(){
         let url = `https://youtube.com/results?search_query=${search_info}`;
         
         // Jump to url
-        setTimeout(() => location.replace(url), 1000);
+        setTimeout(() => window.open(url), 500);
+
+
+        // If you want visitor can not back this web site you can use this code
+        //   -------->  location.replace(url);
     }
 
 

@@ -28,6 +28,11 @@ body{
     font-family: sans-serif;
 }
 
+.error-msg{
+    color: red;
+    font-family: arial;
+}
+
 input{
     padding: 20px;
     user-select: none;
@@ -39,9 +44,10 @@ input{
     font-size: 22px;
 }
 
-input:placeholder{
+input::placeholder {
     font-size: 23px;
 }
+
 
 .search-btn{
     font-family: sans-serif;

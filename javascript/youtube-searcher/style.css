@@ -66,3 +66,21 @@ input::placeholder {
 .search-btn:hover{
     background-color: rgb(27, 27, 27);
 }
+
+
+
+/* ---------  Start responsive css  ----------------- */
+
+@media screen and (max-width: 480px) {
+
+    .search-form{
+        padding: 15px;
+    }
+
+    input{
+        width: 85%;
+        padding: 10px;
+    }
+
+    
+}

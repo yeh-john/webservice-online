@@ -16,19 +16,32 @@ let get_passwd = {
         }
         // Add password
         document.querySelector(".passwd").value = passwd;
-
-
+    },
+    copy_pw: function() {
+        // Copy passwd
+        var passwd_value = document.querySelector(".passwd");
+        passwd_value.focus();
+        passwd_value.select();
+        document.execCommand("copy");
     },
 };
 
-
-
-
-
-
-
-
-// When click .change-pw-btn to do get_passwd
+// When click generate btn to generate passwd
 document.querySelector(".generate-btn").addEventListener("click", function() {
     get_passwd.change_pw();
 });
+
+// When click copy btn to copy passwd
+document.querySelector(".copy-btn").addEventListener("click", function() {
+    get_passwd.copy_pw();
+});
+
+
+// Automatic to create password when visitor visite website
+addEventListener('load', (event) => {
+    // Default passwd length
+    document.querySelector(".pw-length").value = 10;
+    var pagebutton= document.querySelector(".generate-btn");
+    setTimeout(() => pagebutton.click(), 500);
+});
+

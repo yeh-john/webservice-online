@@ -45,3 +45,18 @@ addEventListener('load', (event) => {
     setTimeout(() => pagebutton.click(), 500);
 });
 
+
+
+function test(){
+    let length_value = document.querySelector(".pw-length").value;
+    if(length_value.length == 0){
+        // Add css on error msg
+        document.querySelector(".error-msg").style.padding = "20px";
+        // Add mesage on error msg
+        document.querySelector(".error-msg").innerHTML = "ERROR : Please enter number!!";
+    } else {
+        //Reset error msg
+        document.querySelector(".error-msg").innerHTML = "";
+        document.querySelector(".error-msg").style.padding = "";
+    }
+}

@@ -9,6 +9,9 @@ function search(){
     if (search_bar.length == 0) {
         document.querySelector(".error-msg").innerHTML = "Please enter text";
     } else {
+        // Reset error msg
+        document.querySelector(".error-msg").innerHTML = "";
+        
         // Change space to special character
         let search_info = search_bar.replace(/\s+/g, "+");
         

@@ -1,2 +1,2 @@
-# This prggram s passwroo generatorverrion1.
-I create ths using javascrript
+# This program is password generator version1.
+I create this using javascript

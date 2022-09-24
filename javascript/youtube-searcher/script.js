@@ -18,9 +18,15 @@ function search(){
         // Chage search value to url
         let url = `https://youtube.com/results?search_query=${search_info}`;
         
-        // Jump to url
+        // Jump to url  ( Open new window version )
+        /* 
         setTimeout(() => window.open(url), 500);
-
+        */
+        
+        // Jump to url   ( Replace version )
+        setTimeout(() => location.replace(url), 500);
+        
+        
 
         // If you want visitor can not back this web site you can use this code
         //   -------->  location.replace(url);
